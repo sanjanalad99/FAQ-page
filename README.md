@@ -28,6 +28,9 @@ To run this code in your browser:
 
 3. **Explore the FAQ:**
    - Interact with the FAQ page by clicking on the questions to reveal their respective answers.
+## How it will look once you follow the above steps
+
+![image](https://github.com/sanjanalad99/FAQ-page/assets/133920285/495d41a4-04cf-4e09-a630-d26c5762a7e4)
 
 ## Additional Notes
 
