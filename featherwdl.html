@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1 align="center">FAQ</h1>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.accordion {
+  background-color: #0881cb;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 20px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #1eb6e1;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+
+<button class="accordion">What is drycleaning?</button>
+<div class="panel">
+  <p>Dry-cleaning is a wet process wherein we use detergent as well . The only difference is that instead of water hydrocarbons are used. (generally called as petrol wash). </p>
+</div>
+
+<button class="accordion">How do you take care of hygiene while processing clothes?</button>
+<div class="panel">
+  <p>We are very sensitive towards hygiene , all clothes are treated with an antiseptic to make sure that clothes are disinfected.</p>
+</div>
+
+<button class="accordion">What is the minimum order size?</button>
+<div class="panel">
+  <p>Minimum order size is the minimum value of order in Rupees which is required by us. The value depends upon the location and is subject to change without any prior notice . To keep communication clear , we send a system generated SMS to the user upon successful placing of order so that there is no confusion later.We also know that you may want our services first before trusting us with your valuable clothes therefore ,*first order has lesser minimum order size*.  </p>
+</div>
+
+<button class="accordion">How are undergarments billed?</button>
+<div class="panel">
+  <p>Undergarments are billed on piece basis. </p>
+</div>
+
+<button class="accordion">What is the internet handling charge?</button>
+<div class="panel">
+  <p>Internet Handling charge is small percentage of amount we charge on every payment done using online payment methods.  </p>
+</div>
+
+
+<button class="accordion">How can i avoid paying internet handling charge?</button>
+<div class="panel">
+  <p>You can avoid paying this charge if you use our prepaid plans . Our plans offer exiting discounts on Laundry and Dry-Cleaning and they have no expiry date. So buy Feathers5 Prepaid Plans and get rid of Internet handling charge and hassle of finding"change" amount while paying for our services.</p>
+</div>
+
+<button class="accordion">How much time does it take to do the required service?</button>
+<div class="panel">
+  <p>It mostly depends on the amount of clothes and urgency.   </p>
+</div>
+
+
+<button class="accordion">What are the Express charges?</button>
+<div class="panel">
+  <p>It depends area wise and time required to reach the customers' residence. </p>
+</div>
+
+
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>
